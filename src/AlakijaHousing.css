@@ -1,0 +1,124 @@
+.HeadingDiv{
+    position: fixed;
+}
+.nav-bar{
+    position: fixed;
+}
+
+.image-house{
+   position: fixed; 
+   top: -3px;
+}
+
+.Text-Header{
+    position: fixed;
+    left: 70px;
+    top: -5px;
+    font-family: cursive;
+    color: darkcyan;
+    font-size: 1.5rem;
+}
+
+
+.Home-link{
+    text-decoration: none;
+    position: relative;
+    left: 27rem;
+    color: darkcyan;
+    font-family: cursive;
+    background-size: 2rem;
+
+    
+    
+
+}
+.Home-link:hover{
+    background-color: cadetblue;
+    
+}
+.Aboutus-link{
+    text-decoration: none;
+    position: relative;
+    left: 34rem;
+    color: darkcyan;
+    font-family: cursive;
+}
+.Aboutus-link:hover{
+    background-color: cadetblue;
+    
+}
+.Projects-link{
+    text-decoration: none;
+    position: relative;
+    left: 41rem;
+    color: darkcyan;
+    font-family: cursive;
+    
+}
+.Projects-link:hover{
+    background-color: cadetblue;
+}
+.services-link{
+    text-decoration: none;
+    position: relative;
+    left: 48rem;
+    color: darkcyan;
+    font-family: cursive;
+}
+.services-link:hover{
+    background-color: cadetblue;
+}
+.Contact-link{
+    text-decoration: none;
+    position: relative;
+    left: 55rem;
+    color: darkcyan;
+    font-family: cursive;
+}
+.main-text{
+    font-family: cursive;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    color:darkcyan;
+    font-size: xx-large;
+}
+.text-1{
+    font-family: cursive;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    color:darkcyan;
+
+}
+.talk-with-us-link{
+    text-decoration: none;
+    font-family: cursive;
+    text-align: center;
+    position: relative;
+    top: 70px;
+     font-size: small;
+     
+
+}
+.talk-with-us-container{
+   height: 60px;
+   width: 70px;
+   background-color: brown; 
+   text-align: center;
+   position: relative;
+   left: 390px;
+}
+.image-container{
+  position: relative;
+  top: 70px;
+  
+    height: 700px;
+    background-image: url(./AlakijaHousingimages/outsite-co-R-LK3sqLiBw-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.read-more{
+ text-decoration: none;
+ position: relative;
+}

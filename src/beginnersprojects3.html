@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./beginnersprojects3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+
+
+
+<body>
+   <div class="container">
+       <div class="image">
+      
+           <img src="./pexels-arnie-watkins-3156381.jpg" alt="car driving in the desert" width="100%" height="50%">
+       </div>
+       <div class="image">
+           <img src="./pexels-luis-del-río-15286.jpg" alt="Man walking in the forest" width="100%" height="50%">
+       </div>
+       <div class="image">
+           <img src="./pexels-sebastian-voortman-189349.jpg" alt="largeOceans" width="100%" height="50%">
+       </div>
+       <div class="image">
+        <img src="./pexels-eberhard-grossgasteiger-572897.jpg" alt="icyMountains" width="100%" height="50%"></div>
+        <div class="image">
+            <img src="./pexels-michael-block-3225517.jpg" alt="Hils" width="100%" height="50%">
+        </div>
+        <div class="image">
+            <img src="./pexels-oliver-sjöström-1005417.jpg" alt="somene standing in a beach" width="100%" height="50%">
+        </div>
+        
+        <div class="image">
+            <img src="./pexels-pixabay-269583.jpg" alt="Sun is setting" width="100%" height="50%">
+        </div>
+        <div class="image">
+            <img src="./pexels-gya-den-2303781.jpg" alt="GreenBusDrivingDownTheRoad" width="100%" height="50%">
+        
+        </div>
+
+     <div class="righLeftIcons">
+         <img src="./icons8-left-50.png" alt="left-icon" onclick="show_image(-1)" id="leftButton">
+         <img src="./icons8-right-50.png" alt="right-icon" onclick="show_image(1)" id="rightButton" >
+         
+     </div>
+
+
+
+
+     <div class="dots">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+     </div>
+    </div>
+       
+
+    
+
+   
+</body>
+
+<script>
+ var index = 0;
+ show_image(index);
+
+ function show_image(i){
+  index+=i;
+  var images = document.getElementsByClassName("image");
+
+   var dots = document.getElementsByClassName("dot");
+
+   for (let i= 0; i< images.length; i++) {
+       images[i].style.display = "none"
+       
+   }
+   for (let i= 0; i< dots.length; i++) {
+       dots[i].className = dots[i].className.replace("active","");
+      
+     }
+
+  if(index>images.length - 1){
+      index = 0;
+  }
+  if(index < 0){
+   index = images.length-1
+  }
+  images[index].style.display = "block";
+  dots[index].className += " active";
+}
+</script>
+</html>
